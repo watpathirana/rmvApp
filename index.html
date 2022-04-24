@@ -1,0 +1,837 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Department of Motor Traffic </title>
+</head>
+<body>
+    <!--main---------------------------------------------------------------------------- -->
+    <div class="ui-grid-b ui-responsive" id="main" data-role="page">
+        <div class="panel-Red">
+            <div class="panel-logo">
+                <img src="img/Dmtlogo.png" />
+                <br />
+                <label class="department">
+                    DEPARTMENT OF</label>
+                <br />
+                <label class="motortraffic">
+                    Motor Traffic</label>
+            </div>
+        </div>
+        <div class="panel-Black">
+            <label class="information">
+                motor vehicle information</label>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li data-icon="false"><a href="#NextNo" data-transition="slide">
+                    <div style="float: left; width: 10%; padding-left: 20px;">
+                        <img src="img/buton_grip.png" />
+                    </div>
+                    <div class="label-text">
+                        <label>
+                            Ongoing number</label>
+                    </div>
+                    <div style="float: right; width: 10%;">
+                        <img src="img/buton_grip.png" />
+                    </div>
+                </a></li>
+                <li data-icon="false"><a id="btnVehicalDetailsEnqiry" href="#Details" data-transition="slide">
+                    <div style="float: left; width: 10%; padding-left: 20px;">
+                        <img src="img/buton_grip.png" />
+                    </div>
+                    <div class="label-text">
+                        <label>
+                            Vehicle details</label>
+                    </div>
+                    <div style="float: right; width: 10%;">
+                        <img src="img/buton_grip.png" />
+                    </div>
+                </a></li>
+                <li data-icon="false"><a id="btnVehicalRevenueLicenseStatus" href="#Status" data-transition="slide">
+                    <div style="float: left; width: 10%; padding-left: 20px;">
+                        <img src="img/buton_grip.png" />
+                    </div>
+                    <div class="label-text">
+                        <label>
+                            revenue license Status</label>
+                    </div>
+                    <div style="float: right; width: 10%;">
+                        <img src="img/buton_grip.png" />
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="panel-bottm-black">
+        </div>
+        <div class="footer-main">
+            <div class="footer-0">
+                <label class="footer-1">
+                    DEPARTMENT OF</label>
+                <br />
+                <label class="footer-2">
+                    Motor Traffic</label>
+                <br />
+                <label class="footer-1">
+                    Sri Lanka</label>
+                <br />
+                <img class="icta-logo" src="img/ICTA_logo.png" />
+                <br />
+            </div>
+        </div>
+    </div>
+    <!--NextNo ---------------------------------------------------------------------- -->
+    <div id="NextNo" class="ui-grid-b ui-responsive Categoty-page" data-role="page">
+        <div class="panel-Top">
+        </div>
+        <div class="top-white">
+            <div style="float: left;">
+                <a href="#main" data-transition="slide">
+                    <img style="width: 51px; margin-top: 1px;" src="img/back_button_normal.png" />
+                </a>
+            </div>
+            <div style="max-height: 52px;">
+                <div align="center">
+                    <label class="label-text-n">
+                        ONGOING VEHICLE NUMBER
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="A">
+                    <div align="center">
+                        <img src="img/icon/ambulance.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Ambulance
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="1">
+                    <div align="center">
+                        <img src="img/icon/car.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Car
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="4">
+                    <div align="center">
+                        <img src="img/icon/commercial.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Commercial
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="8">
+                    <div align="center">
+                        <img src="img/icon/duel_purpos_commercial.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Dual
+                        <br />
+                        Purpose
+                        <br />
+                        (Commercial)
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="F">
+                    <div align="center">
+                        <img src="img/icon/fork_lifter.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Fork
+                        <br />
+                        Lift
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="I">
+                    <div align="center">
+                        <img src="img/icon/invalid_carriage.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Invalid
+                        <br />
+                        Carriage
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="6">
+                    <div align="center">
+                        <img src="img/icon/land_vehicle.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Land
+                        <br />
+                        Vehicle
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="5">
+                    <div align="center">
+                        <img src="img/icon/land_vehicle_small.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Land
+                        <br />
+                        Vehicle
+                        <br />
+                        (Small)
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="E">
+                    <div align="center">
+                        <img src="img/icon/lorry_trailer_bowser.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Lorry
+                        <br />
+                        Trailer
+                        <br />
+                        Bowser
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="3">
+                    <div align="center">
+                        <img src="img/icon/motor_cycle.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Motor
+                        <br />
+                        Cycle
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="H">
+                    <div align="center">
+                        <img src="img/icon/motor_hearse.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Motor
+                        <br />
+                        Hearse
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="7">
+                    <div align="center">
+                        <img src="img/icon/motor_lorry_commercial.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Motor
+                        <br />
+                        Lorry
+                        <br />
+                        (Commercial)
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="V">
+                    <div align="center">
+                        <img src="img/icon/trycicle_van.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Motor
+                        <br />
+                        Tricycle
+                        <br />
+                        Van
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="G">
+                    <div align="center">
+                        <img src="img/icon/non_agricultural_land_vehicle.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Non
+                        <br />
+                        Agricultural
+                        <br />
+                        Land
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="N">
+                    <div align="center">
+                        <img src="img/icon/primover.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Prime
+                        <br />
+                        Mover
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="O">
+                    <div align="center">
+                        <img src="img/icon/single_cab.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Single
+                        <br />
+                        Cab
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="U">
+                    <div align="center">
+                        <img src="img/icon/special_purpose.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Special
+                        <br />
+                        Purpose
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="2">
+                    <div align="center">
+                        <img src="img/icon/three_wheel.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Three
+                        <br />
+                        Wheeler
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="K">
+                    <div align="center">
+                        <img src="img/icon/three_wheel_car.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Three
+                        <br />
+                        Wheeler
+                        <br />
+                        Car
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="S">
+                    <div align="center">
+                        <img src="img/icon/tractor_trailer.png" style="display: block; margin-top: -15px;
+                            margin-bottom: -12px" />
+                        Tractor
+                        <br />
+                        Trailer
+                        <br />
+                        Bowser
+                    </div>
+                </a></li>
+                <li data-icon="false"><a class="VehicalCategory" data-internalid="9">
+                    <div align="center">
+                        <img src="img/icon/other.png" style="display: block; margin-top: -15px; margin-bottom: -12px" />
+                        Other
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <div id="popupOnGoing" data-role="popup">
+            <div data-role="header">
+                <h1 role="heading">
+                    <label style="font-weight: bold; color: #000; font-size: 18px;" id="messageHeaherOnGoing">
+                    </label>
+                </h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3>
+                    <label style="color: #FFF" id="messageLableOnGoing">
+                    </label>
+                </h3>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-delete ui-btn-icon-left"
+                    data-rel="back">Close</a>
+            </div>
+        </div>
+        <div id="popupOnGoingError" data-role="popup">
+            <div data-role="header">
+                <h1 role="heading">
+                    <label style="font-weight: bold; color: #000;" id="messageHeaherOnGoingErr">
+                    </label>
+                </h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3>
+                    <label style="color: #FFF" id="messageLableOnGoingErr">
+                    </label>
+                </h3>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-delete ui-btn-icon-left"
+                    data-rel="back">Close</a>
+            </div>
+        </div>
+        <div data-role="footer">
+            <div class="footer-main">
+                <div class="footer-0">
+                    <label class="footer-1">
+                        DEPARTMENT OF</label>
+                    <br />
+                    <label class="footer-2">
+                        Motor Traffic</label>
+                    <br />
+                    <label class="footer-1">
+                        Sri Lanka</label>
+                    <br />
+                    <img class="icta-logo" src="img/ICTA_logo.png" />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Details ---------------------------------------------------------------------- -->
+    <div class="ui-responsive" data-role="page" id="Details">
+        <form id="Detailsform" name="Details">
+        <div class="panel-Top">
+        </div>
+        <div class="top-white">
+            <div style="float: left;">
+                <a href="#main" data-transition="slide">
+                    <img style="width: 51px; margin-top: 1px;" src="img/back_button_normal.png" />
+                </a>
+            </div>
+            <div style="max-height: 52px;">
+                <div align="center">
+                    <label class="label-text-n">
+                        VEHICLE Details
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-a">
+                <div>
+                    <div class="lable-header">
+                        <label>
+                            Vehicle Number :
+                        </label>
+                    </div>
+                    <div style="float: left; margin-right: 15px;">
+                        <input id="txtVehicalDetailsVehicalNumber" type="text" value="" />
+                        <label class="note-text">
+                            <span style="text-transform: lowercase;">e.g: </span>KA-1010, 15-3456
+                        </label>
+                    </div>
+                    <div class="ui-block-c">
+                        <a style="float: left; margin-left: -7px !important; margin-top: 8px !important;"
+                            href="#Details_result" id="btVDEnquiry" type="submit" data-role="button">Submit</a>
+                    </div>
+                </div>
+            </div>
+            <div id="result" class="ui-grid-a result-text">
+                <div class="ui-block-a">
+                    <label>
+                        Ab. Owner:
+                    </label>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_dtl_rst_Owner">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        Engine No:</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_dtl_rst_EngineNo">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        Class:</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_dtl_rst_ClassOfVehicle">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        Make:</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_dtl_rst_Make">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        Model:</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_dtl_rst_Model">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        YOM:</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_dtl_rst_YearOfManufacture">
+                    </label>
+                </div>
+                <div class="ui-block-c">
+                    <hr />
+                    <label class="note-text">
+                        <span style="text-transform: uppercase; font-style: italic;">Note : </span>Full
+                        information of this vehicle can be obtained through <a id="lnkSrilankalk">www.srilanka.lk</a>
+                        or <a id="lnkDMT">www.motortraffic.gov.lk</a>
+                    </label>
+                    <br />
+                    <label class="note-text">
+                        <span style="text-transform: uppercase; font-style: italic;">Disclaimer : </span>
+                        The information provided in this service is only for your reference and should not
+                        be misused.
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="popupDetails" data-role="popup">
+            <div data-role="header">
+                <h1 role="heading">
+                    <label style="font-weight: bold; color: #000;" id="messageHeaherDtl">
+                    </label>
+                </h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3>
+                    <label style="color: #FFF" id="messageLableDtl">
+                    </label>
+                </h3>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-delete ui-btn-icon-left"
+                    data-rel="back">Close</a>
+            </div>
+        </div>
+        <div data-role="footer">
+            <div class="footer-main">
+                <div class="footer-0">
+                    <label class="footer-1">
+                        DEPARTMENT OF</label>
+                    <br />
+                    <label class="footer-2">
+                        Motor Traffic</label>
+                    <br />
+                    <label class="footer-1">
+                        Sri Lanka</label>
+                    <br />
+                    <img class="icta-logo" src="img/ICTA_logo.png" />
+                    <br />
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <!--Status ---------------------------------------------------------------------- -->
+    <div class="ui-responsive" data-role="page" id="Status">
+        <form id="Statusform" name="Status">
+        <div class="panel-Top">
+        </div>
+        <div class="top-white">
+            <div style="float: left;">
+                <a href="#main" data-transition="slide">
+                    <img style="width: 51px; margin-top: 1px;" src="img/back_button_normal.png" />
+                </a>
+            </div>
+            <div style="max-height: 52px;">
+                <div align="center">
+                    <label class="label-text-n">
+                        Revenue License Status
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-a">
+                <div>
+                    <div class="lable-header">
+                        <label>
+                            Vehicle Number :
+                        </label>
+                    </div>
+                    <div style="float: left; margin-right: 15px;">
+                        <input id="txtLICStatusVehicalNumber" type="text" value="" />
+                        <label class="note-text">
+                            <span style="text-transform: lowercase; font-style: italic;">e.g: </span>KA-1010,
+                            15-3456
+                        </label>
+                    </div>
+                    <div class="ui-block-c">
+                        <a style="float: left; margin-left: -7px !important; margin-top: 8px !important;"
+                            href="#Details_result" id="btStatus" type="submit" data-role="button">Submit</a>
+                    </div>
+                </div>
+            </div>
+            <div id="Statusresult" class="ui-grid-a result-text">
+                <div class="ui-block-a">
+                    <label>
+                        Issued Date :
+                    </label>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_Status_Issued_Date">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        Expiry Date :</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_Status_Expiry_Date">
+                    </label>
+                </div>
+                <div class="ui-block-a">
+                    <label>
+                        License No :</label></br>
+                </div>
+                <div class="ui-block-b">
+                    <label id="lbl_Status_License_No">
+                    </label>
+                    <br />
+
+                </div>
+                <div class="ui-block-c">
+                    <hr />
+                    <label class="note-text">
+                        <span style="text-transform: uppercase; font-style: italic;">Note : </span>Information
+                        is provided by Provincial Department of Motor Traffic.
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="popupStatus" data-role="popup">
+            <div data-role="header">
+                <h1 role="heading">
+                    <label style="font-weight: bold; color: #000;" id="messageHeaherSts">
+                    </label>
+                </h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3>
+                    <label style="color: #FFF" id="messageLableSts">
+                    </label>
+                </h3>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-delete ui-btn-icon-left"
+                    data-rel="back">Close</a>
+            </div>
+        </div>
+        <div data-role="footer">
+            <div class="footer-main">
+                <div class="footer-0">
+                    <label class="footer-1">
+                        DEPARTMENT OF</label>
+                    <br />
+                    <label class="footer-2">
+                        Motor Traffic</label>
+                    <br />
+                    <label class="footer-1">
+                        Sri Lanka</label>
+                    <br />
+                    <img class="icta-logo" src="img/ICTA_logo.png" /><br />
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <!--Dialogs ---------------------------------------------------------------------- -->
+    <div data-role="dialog" id="dialog">
+        <div data-role="header">
+            <h1>
+                <label style="font-weight: bold; color: #000;" id="messageHeaher">
+                </label>
+            </h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h3>
+                <label style="color: #FFF" id="messageLable">
+                </label>
+            </h3>
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-delete ui-btn-icon-left"
+                data-rel="back">Close</a>
+        </div>
+    </div>
+    <div data-role="dialog" id="dialog-comfirm">
+        <div data-role="header">
+            <h1>
+                <label style="font-weight: bold; color: #000;" id="messageHeaher-comfirm">
+                </label>
+            </h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h3>
+                <label style="color: #FFF" id="messageLable-comfirm">
+                </label>
+            </h3>
+            <a href="#" onclick="alertexit('1')" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-check ui-btn-icon-left"
+                data-rel="dialog">Yes</a> <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-delete ui-btn-icon-left"
+                    data-rel="back">No</a>
+        </div>
+    </div>
+    
+    
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="js/lib/jquery-mobile/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="js/lib/jquery-1.11.2.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="js/lib/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Include the jQuery jquery.soap library -->
+    <script type='text/javascript' src="js/lib/jquery.soap.js"></script>
+    <!-- Include the jQuery SOAP Templates -->
+    <script type='text/javascript' src="js/soap_requests/load_template.js"></script>
+    <!-- Include the controlles -->
+    <script type="text/javascript" src="js/controllers/form_controller.js"></script>
+    <!-- Include the models -->
+    <script type="text/javascript" src="js/models/form_model.js"></script>
+    <!-- Include the views -->
+    <script type="text/javascript" src="js/views/form_view.js"></script>
+    <!-- Include the eventhelpers Lib -->
+    <script type="text/javascript" src="js/lib/eventhelpers.js"></script>
+    <!-- Include the config Lib -->
+    <script type="text/javascript" src="js/lib/config.js"></script>
+    <!-- Include the cordova Lib -->
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <!-- Include the main Index.js -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- initialize -->
+    <script type="text/javascript">
+        //app.initialize();
+
+        var Bearer = "798f7fb2-ecce-3c76-a675-143038467dd6";
+        var UrlGetOnGoingVehicleNoDMT = "http://api.lankagate.gov.lk:8280/GetOnGoingVehicleNoDMT/1.0";
+        var UrlGetVehicleLimitedInfoDMT = "http://api.lankagate.gov.lk:8280/GetVehicleLimitedInfoDMT/1.0";
+        var UrlRevenueLicenseStatus = "http://api.lankagate.gov.lk:8280/RevenueLicenseStatus/1.0/revstatusProxy";
+
+
+        //Ongoing Vehicle No
+        function GetNextNumber(value) {
+            //UpdateLogFile('Service - Ongoing Vehicle No: Calling\n');
+            var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://schemas.conversesolutions.com/xsd/dmticta/v1">' +
+                '<soapenv:Header/>' +
+                '<soapenv:Body>' +
+                '<v1:GetOnGoingVehicleNo>' +
+                '<v1:vehicleCategory>' + value + '</v1:vehicleCategory>' +
+                '</v1:GetOnGoingVehicleNo>' +
+                '</soapenv:Body>' +
+                '</soapenv:Envelope>';
+
+            //var soapRequest = new LoadTemplate().LoadXML("ongoing_number",value); // Load Soap Request
+            //config.getValue("serverDetails.bearer"); // get Bearer from Config File
+            var jqXHR;
+
+            jQuery.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+            $.support.cors = true;
+
+            // Soap Call
+            $.soap({
+                url: UrlGetOnGoingVehicleNoDMT,
+                HTTPHeaders: { 'Authorization': 'Bearer ' + Bearer },
+                data: soapRequest,
+                async: false,
+                success: function (soapResponse) {
+                    console.log(soapResponse);
+                    //jqXHR = soapResponse;
+
+                },
+                error: function (SOAPResponse) {
+
+                    //If any error show this alert
+                    console.log(SOAPResponse);
+                }
+            }).done(function (data, textStatus, jqXHR) { });
+
+
+            return jqXHR; // Return Soap Respond
+        }
+
+
+
+        //GetNextNumberNormal
+        function GetVehicleLimitedInfo(value) {
+            // //UpdateLogFile('Service - Ongoing Vehicle No: Calling\n');
+
+            var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://schemas.conversesolutions.com/xsd/dmticta/v1">' +
+                '<soapenv:Header/>' +
+                '<soapenv:Body>' +
+                '<v1:GetVehicleLimitedInfo>' +
+                '<v1:vehicleNo>' + value + '</v1:vehicleNo>' +
+                '<v1:phoneNo>94000000000</v1:phoneNo>' +
+                '</v1:GetVehicleLimitedInfo>' +
+                '</soapenv:Body>' +
+                '</soapenv:Envelope>';
+
+            var jqXHR;
+
+            jQuery.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+            $.support.cors = true;
+
+            // Soap Call
+            $.soap({
+                url: UrlGetVehicleLimitedInfoDMT,
+                HTTPHeaders: { 'Authorization': 'Bearer ' + Bearer },
+                data: soapRequest,
+                async: false,
+                success: function (soapResponse) {
+                    console.log(soapResponse);
+                },
+                error: function (SOAPResponse) {
+
+                    //If any error show this alert
+                    console.log(SOAPResponse);
+                }
+            }).done(function (data, textStatus, jqXHR) { });
+            return jqXHR; // Return Soap Respond
+        }
+
+        function GetVehicleInfo(value,chaNo) {
+            // //UpdateLogFile('Service - Ongoing Vehicle No: Calling\n');
+
+            var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://schemas.conversesolutions.com/xsd/dmticta/v1">' +
+                '<soapenv:Header/>' +
+                '<soapenv:Body>' +
+                '<v1:GetVehicleInfo>' +
+                '<v1:vehicleNo>' + value + '</v1:vehicleNo>' +
+                '<v1:NICNo>000000000V</v1:NICNo>' +
+                '<v1:name>ABCD</v1:name>' +
+                '<v1:chassisNo>'+ chaNo +'</v1:chassisNo>' +
+                '</v1:GetVehicleInfo>' +
+                '</soapenv:Body>' +
+                '</soapenv:Envelope>';
+
+            var jqXHR;
+
+            jQuery.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+            $.support.cors = true;
+
+            // Soap Call
+            $.soap({
+                url: UrlGetOnGoingVehicleNoDMT,
+                HTTPHeaders: { 'Authorization': 'Bearer ' + Bearer },
+                data: soapRequest,
+                async: false,
+                success: function (soapResponse) {
+                    console.log(soapResponse);
+                },
+                error: function (SOAPResponse) {
+
+                    //If any error show this alert
+                    console.log(SOAPResponse);
+                }
+            }).done(function (data, textStatus, jqXHR) { });
+            return jqXHR; // Return Soap Respond
+        }
+
+
+        //Revenue License Status
+        function LicenseStatus(value) {
+
+
+            jQuery.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+            $.support.cors = true;
+            var Url = UrlRevenueLicenseStatus + "?vRegNo=" + value; // get Url from Config File
+            var Bearer = config.getValue("serverDetails.bearer"); // Load Soap Request
+            var jqXHR;
+            //Call Rest Service
+            $.ajax({
+                type: "GET",
+                async: false,
+                dataType: "json",
+                timeout: 10000,
+                url: Url,
+                headers: { 'Authorization': 'Bearer ' + Bearer },
+                success: function (data, status, req) {
+                    console.log(data);
+
+                },
+                error: function (request, status, error) {
+                    
+                }
+            });
+
+
+            return jqXHR; // Return Soap Respond
+        }
+
+
+
+
+        //GetNextNumber('1');
+        //GetVehicleLimitedInfo('CBF-7777');
+        GetVehicleInfo('BFE-6040','ME1SE77G1H0041974');
+        //LicenseStatus('CBF-7777');
+
+        
+    </script>
+    <!-- config XML Path -->
+    <div id="config">
+        <!--
+        xml=js/config/config.xml
+        -->
+    </div>
+</body>
+</html>

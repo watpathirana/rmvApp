@@ -1,0 +1,49 @@
+<config>
+
+  <serverDetails>
+    <bearer removeMultispaces="true">
+                798f7fb2-ecce-3c76-a675-143038467dd6
+  	</bearer>
+	<DMTGetNextNumberURL removeMultispaces="true">
+		http://api.lankagate.gov.lk:8280/GetOnGoingVehicleNoDMT/1.0
+	</DMTGetNextNumberURL>
+	<DMTGetVehicalDetails removeMultispaces="true">
+		http://api.lankagate.gov.lk:8280/GetVehicleLimitedInfoDMT/1.0
+	</DMTGetVehicalDetails>
+	<RevenueLicenseStatus removeMultispaces="true">
+		http://api.lankagate.gov.lk:8280/RevenueLicenseStatus/1.0/revstatusProxy
+	</RevenueLicenseStatus>
+  </serverDetails>
+  
+  <setting>
+  	  <LogFileOn removeMultispaces="true">
+      		FALSE
+      </LogFileOn>
+  </setting>
+  
+  <messages>
+  	  <Titel removeMultispaces="true">
+      		DMT
+      </Titel>
+      <ServerNotConnect removeMultispaces="true">
+       		Unable to connect Server
+      </ServerNotConnect>
+	   
+	  <WatingMessage removeMultispaces="true">
+      		Please Wait...
+      </WatingMessage>
+  </messages>
+   
+  <formValidator>
+    <errors>
+      <mandatoryField removeMultispaces="true">
+        Please enter vehicle number
+      </mandatoryField>
+	   
+	    <UnabletoFindData removeMultispaces="true">
+       Please check vehicle number.
+      </UnabletoFindData>
+	   
+    </errors>
+  </formValidator>
+</config>
